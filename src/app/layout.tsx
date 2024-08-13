@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import { Montserrat } from "next/font/google";
 import "../styles/globals.css";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import ThemeProvider from "@/theme";
+import { fontReguler } from "@/libs/font";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={fontReguler.className}>
         <AntdRegistry>
           <ThemeProvider>{children}</ThemeProvider>
         </AntdRegistry>

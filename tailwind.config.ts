@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        // sans: ["var(--font-ibm-plex-sans-thai)"],
+        sans: ["var(--font-montserrat-sans)"],
       },
     },
     fontSize: {

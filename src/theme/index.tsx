@@ -2,6 +2,7 @@
 
 import React from "react";
 import { ConfigProvider } from "antd";
+import { fontReguler } from "@/libs/font";
 
 const ThemeProvider = ({ children }: { children: React.ReactNode }) => (
   <>
@@ -16,6 +17,7 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => (
           colorInfo: "#118ab2",
           colorError: "#ef476f",
           colorWarning: "#ffd166",
+          fontFamily: fontReguler.style.fontFamily,
         },
       }}>
       {children}
