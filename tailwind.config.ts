@@ -8,13 +8,25 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        // sans: ["var(--font-ibm-plex-sans-thai)"],
       },
+    },
+    fontSize: {
+      h1: "3.052rem",
+      h2: "2.441rem",
+      h3: "1.953rem",
+      h4: "1.563rem",
+      h5: "1.25rem",
+      p: "1rem",
+      small: "0.8rem",
+      mini: "0.64rem",
+      tiny: "0.512rem",
     },
   },
   plugins: [],
+  corePlugins: {
+    preflight: false,
+  },
 };
 export default config;
